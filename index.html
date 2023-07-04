@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name-"viewport" content-"widthedevice-width, initial-scale=1">
+  <title>John's Trivia App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- <script> src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+  <script src="main.js" defer></script> <!-- links to the main.js file -->
+</head>
+<body class="bg-dark bg-gradient "> <!-- sets background to dark and gradient -->
+
+  <div id="start" class="container"><!-- 1st container start page -->
+    <h1 class="display-3 fw-bold text-info">General Knowledge Quiz</h1> <!-- Heading -->
+    <p>
+      <label class="form-label fs-3 text-warning">Name:</label> <!-- displays name: above input box -->
+      <input id="userName" class="form-control fs-3" placeholder="Enter your name here"></input> <!-- input box for user name -->
+    </p>
+    <button id="startButton" class="btn btn-primary btn-lg fs-1">Start Quiz</button> <!-- start quiz button -->
+  </div> 
+
+  <div id="quiz" class="container"> <!-- 2nd container  quiz page -->
+    <h1 class="display-3 text-info fw-bold">General Knowledge Quiz</h1> <!-- Heading -->
+    <p id="category" class="text-warning fs-5">Category: </p> <!-- displays category: to browser on quiz page -->
+    <p id="question" class="fs-1 text-success">Question:</p> <!-- displays questions to the browser on quiz page -->
+      <div class="container"> <!-- container for answer buttons -->
+        <div class="row"> <!-- creates row 1 for answer buttons -->
+          <button id="answer1" class="btn btn-light btn-lg col m-3"></button> <!-- creates row 1 column 1 answer button (top left button) -->
+          <button id="answer2" class="btn btn-light btn-lg col m-3"></button> <!-- creates row 1 column 2 answer button (top right button) -->
+        </div>
+        <div class="row"> <!-- creates row 2 for answer buttons -->
+          <button id="answer3" class="btn btn-light btn-lg col m-3"></button> <!-- creates row 2 column 1 answer button (bottom left button) -->
+          <button id="answer4" class="btn btn-light btn-lg col m-3"></button> <!-- creates row 2 column 2 answer button (bottom right button) -->
+        </div>
+      </div>
+    <div>
+      <button id="next" class="btn btn-primary btn-lg">NEXT</button> <!-- next button -->
+    </div>
+  </div>
+
+  <div id="end" class="container"> <!-- 3rd container end page -->
+    <h1 class="display-3 text-info fw-bold">General Knowledge Quiz</h1> <!-- header -->
+    <p id="userName_end" class="text-warning"></p> <!-- displays user name at end of game -->
+    <p id="score" class="text-warning"></p> <!-- displays users score at end of game -->
+
+    <h1 class="text-success fw-bold"><u>High Scores</u></h1> <!-- Header for Leaderboard -->
+    <div id="quiz" class="container text-light"> <!-- container for Leaderboard  -->
+      <div class="row"> <!-- creates a row -->
+        <div class="col-6 leaderboard fs-3" id="lb-user-1"></div> <!-- creates column 1 = user -->
+        <div class="col-6 leaderboard fs-3" id="lb-score-1"></div> <!-- creates column 2 = score -->
+      </div>
+      <div class="row"> <!-- creates a row -->
+        <div class="col-6 leaderboard fs-3" id="lb-user-2"></div> <!-- creates column 1 = user -->
+        <div class="col-6 leaderboard fs-3" id="lb-score-2"></div> <!-- creates column 2 = score -->
+      </div>
+      <div class="row"> <!-- creates a row -->
+        <div class="col-6 leaderboard fs-3" id="lb-user-3"></div> <!-- creates column 1 = user -->
+        <div class="col-6 leaderboard fs-3" id="lb-score-3"></div> <!-- creates column 2 = score -->
+      </div>
+      <div class="row"> <!-- creates a row -->
+        <div class="col-6 leaderboard fs-3" id="lb-user-4"></div> <!-- creates column 1 = user -->
+        <div class="col-6 leaderboard fs-3" id="lb-score-4"></div> <!-- creates column 2 = score -->
+      </div>
+      <div class="row"> <!-- creates a row -->
+        <div class="col-6 leaderboard fs-3" id="lb-user-5"></div> <!-- creates column 1 = user -->
+        <div class="col-6 leaderboard fs-3" id="lb-score-5"></div> <!-- creates column 2 = score -->
+      </div>
+    </div>
+
+    <button id="restart" class="btn btn-primary btn-lg">Play Again</button> <!-- Restart game button -->
+  </div>
+
+</body>
+</html>
